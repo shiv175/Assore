@@ -1,0 +1,64 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoiceNo&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Library/GetInvoices.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoiceType&Sequence_7",
+        "InputFolderPath&Sequence_1",
+        "TempFolderPath&Sequence_1",
+        "InvoiceNo&Sequence_3",
+        "EmailList&Sequence_3",
+        "AttachmentResult&Sequence_6",
+        "IsFileExists&Sequence_7",
+        "pageCount&Sequence_7",
+        "PdfText&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Library/myShipInfo.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FileList&Sequence_1",
+        "CarrierName&Sequence_1",
+        "Carrier&Sequence_15"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Library/SendMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoiceNo&Sequence_2",
+        "EmailBody&Sequence_3",
+        "InvoiceType&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

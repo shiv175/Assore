@@ -1,0 +1,366 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="myShipInfo" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="754,4181" sap2010:WorkflowViewState.IdRef="myShipInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="86">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="myShipInfo" sap:VirtualizedContainerService.HintSize="764,4116" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FileList">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="CarrierName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: myShipINFO - Small Parcel, Freight Audit - Cost Visibility" sap:VirtualizedContainerService.HintSize="702,1127" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="b307beef-08a8-4d6c-850a-a48e421362fb" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,910" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b307beef-08a8-4d6c-850a-a48e421362fb" Text="dbgama" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/" DesignTimeRectangle="519, 314, 320, 32" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'dbgama'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' name='userName' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' name='userName' class='' aaname='' /&gt;" Guid="dad6f1a7-9923-4be0-a221-3f656cb0e72c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAkCAYAAADxaUMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMRSURBVHhe7dq7SuxQFIDhvIrPo9WAr2KrxnhFUFC0sZOMaC9YaJuxFEWwsLOw1FIFWWevnZXMzsVxOI6K5P9gcTKT7JlT/exJjAQA4BFEADBlEKemphiGYTo309PTVsFaEAGga+bm5uyIIALoOIIIAIYgAoAhiABgCCIAGIIIAIYgAoAhiAD+vMvLS1ldXZX5+fkPZ3FxUY6Pj+Xp6clWNRFEAH/eZzEsZmlpSW5vb21V038EMZMkiiQZuMNBItFsKo/5CQD4FW3xq8/GxoZsbW3Jzc2NrWoiiAD+vLYA1uf09FTOz88nEcRHSWcjiVwIozhpBDGN7VyUuFwWgjWzbo079mu8PKr5GjexrXpIpec+I+337FxP0ofg2uI6pd9dvO9m+NkAuiaOYzk4OJC9vT1ZXl6Wo6Mj2d3d9bvCw8ND/+/Egphp8IqdoIWoDKI77vXzPaK/zqL1qFFrW2OhLNbkEdTwFce1z6ucazl2Kt8FoHPW1tbk/v7eP1zZ2dmR19dXybJM0jSV5+dn6ff7kwpiHrDhDix47UMX7Apth5eNWtOgO8ARoSt3hcF1dfr/IIhAZy0sLPj7g5ubm363qDvF9fV1SZLEv6+7Rn3wouHUYN7d3dnKqjGCGNwz9GpBDENUBnHEGmU7xuGEQRwGdlQQ891jMAQR6Ky2e4bhrKysyPb2dvk0Wn9Ct5nsDrF8PWJNI5ZB6MYNYtv3EkSgs+oBDGd/f9//TH55eZGzs7Py/TZj3UP88H5geOyMdw+xGkR/3ZeCmMeWIALdpT+FwwiGc3JyIoPBYHJBLKPjQqbh0afKZRDtdfNna7AmdtcEO8Y8gvm5Xj8bnhv7J3Pw2freoLoOQLdcX1/7e4ZhCOszwSB+kQ9dETMA+F5vb2+VGOr8ahDrDz2K3SEAfDcNoj5ZDoN4dXXl/wxHj/XhSpuf2SECwA96f3+Xi4uLShT1SbP+SY7GUO8ptiGIAGAIIgAYgggAhiACgCGIAGAIIgAYgggAhiACgGkN4szMjD/BMAzTtSmUQQSAriOIAOCJ/AMft5MBl8VluAAAAABJRU5ErkJggg==" InformativeScreenshot="3de392dd5bfa799613cd10179d5a7efa.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myShipINFO - Small Parcel, Freight Audit - Cost Visibility' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="519, 295, 322, 19" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAXCAYAAAB3cuYWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGJSURBVHhe7dexrYMwEIDhtwq7vCo0mSRFCrIHUgrGSIqMEaQsEba4d2dsY58SPQo6/k+yRCwMVL8uPwIAqBBGAHAIIwA4hBEAHMIIAA5hBACHMAKAQxgBwFnCOD3kdH3FH7P3/SKn+xR/AcA+EEYAcFaHcbwe5fcQV77vJX3aOwwyhr1Jbmc9d9a980Pez0GvL/lsDq29L589Sv8Mm3p2kD69S99j3xCu7Vnh4Pxd6RzhBrC1lWHUABZhSiyWc9CUnQ/3zGG8pV5pGHPU8j367KdGz/aM3RPebWfLSKbwFc8snmGqbwCADayeGMsprYxY3gvLpkbbT9OjsokxT3VlYN35/Mx68kyBHa/x2iJavZOpEcC2ljCGv8XFpOfCtFj2P09rZdzUlzDm0JlqYvwnjG5iBICtFWFUbhqrglbszxH7sB+CtS6M9QQ6xP0VYVTVWV38lQawpTqMAADCCAAeYQQAhzACgEMYAcAhjADg5DA2TcNisVi7W23bxgouqjACwN50XRevEpE/NYCnVcn+GoIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b307beef-08a8-4d6c-850a-a48e421362fb" Text="Feb2023" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/" DesignTimeRectangle="519, 373, 320, 32" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBoxPassword" FriendlyName="'Texas2022!'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' type='password' name='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='password' name='password' aaname='' /&gt;" Guid="33851554-6efd-4076-8f46-074b1070449e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAkCAYAAADxaUMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI1SURBVHhe7dq9iupAGIDh3IrXo5Wwt2LrX/xFUFC0sZMo2gsW2iaWoggWdltYaqmCfMeZHT0x5nCa3SKb94GPdbLE8mWS0RIAgEYQAcB4BjGRSDAMw8RuksmkqWAgiAAQN5lMxnwiiABijiACgEEQAcAgiABgEEQAMAgiABgEEQAMgggg8pbLpVQqFclms/+cfD4v4/FYjsejuesdQQQQef+L4WOKxaJst1tz1zuCCCDywuIXnHq9Ls1mUzabjbnrHUEEEHlhAQzOdDqV+XxOEAH8boVCQfr9vnS7XSmVSjIajaTT6ehd4WAw0H+/LYhuwRLLuk/B1evDMP21/nDkELKWT0fSam2lxflUF1yx9doS21Prn/lOAPFUrVZlv9/rw5V2uy2Xy0Vc1xXHceR0OslwOPyuIP4Nj2XZ99VBnI/HWsUpuPbF7D7p4T1nnv1cfwXwJ74TQFzlcjn9frDRaOjdotop1mo1sW1bX1e7RnXwosKpgrnb7cydr9ghAoi8sHeG/imXy9JqtZ6n0eoROgzvEAFEXjCA/un1evox+Xw+y2w2e14PQxABRJ56FPZH0D+TyUQ8zyOIAOJhvV7rd4b+EAaHIAKIpev1+hJDNQQRQCypIKqTZX8QV6uV/hmO+qwOV8IQRAC/zu12k8Vi8RJFddKsfpKjYqjeKYYhiABgEEQAMAgiABgEEQAMgggABkEEAIMgAoBBEAHACA1iKpXS/2AYhonbPDyDCABxRxABQBP5A5oiOOSPq/OcAAAAAElFTkSuQmCC" InformativeScreenshot="03269db739d54e22f47fff4e52212b7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myShipINFO - Small Parcel, Freight Audit - Cost Visibility' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="519, 354, 322, 19" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='Password' tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Password' type='' tag='LABEL' class='' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAXCAYAAAB3cuYWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGZSURBVHhe7djNjYMwEEDhbYVe9rRcthIOOZA+kDhQRnJIGUGiidCFl7HH2GMtEYcgRcr7JEvhz8npaciXAwAYhBEACoQRAAqEEQAKhBEACoQRAAqEEQAKhBEACimM8801P7/uO1/9pBffzeS608099AgAXsmG0YRwdpfT2V1mPXwrhBHAcXaGcQlRNkk2V63lfcgmzMGNcs5MnvJ8to9eC89v7R/PhevNaTnnIyjHek8/EEYAh3n6Kp0COIXoCblPozT2MWLJ43p23V0PlJzzey0hbZbY+Vd0s0/2Xev5PJzZHkKCTBgBHOTJxGhJvNZoxiiZmOrE+N/0p7EbfTTDa7B8jqGzgZXnZS8JY9wzfH8KbtiDMAI4wq4wmilwnegsM9FFMtn5PeNrsQQwBK/LYrg9MaYwmv03fgMAvMK+iTH/L1GipsEyU6ROjBKwdM7GL97jP5uwbf3HmMIYjvUeH1nCCOAYKYwAAI8wAkCBMAJAgTACQIEwAkCBMAJAYQ1jVVUsFov1cauua61gYsIIAJ+mbVv9FDn3B4yrpx7V0MddAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DelayAfter="3" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b307beef-08a8-4d6c-850a-a48e421362fb" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/" DesignTimeRectangle="679, 417, 160, 36" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='submit' aaname='Login to myShipINFO' check:text='Sign In' /&gt;" Guid="431c9fb1-7316-4837-ac07-ec62d87c2b8b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKQAAAAoCAYAAABwx1HiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHQSURBVHhe7ZwxbsJAFAVzgrS5Wu7CSVKk4AKR0qWlIWUKGpc0NKQA0UGz4bN+6wVvAiSAv+IZaSRsLy7Q6GMktHcBwBEECa7YC/LjcxEe397Dw/NruH96Qbya1pi1Zs3lpCDtAiHirbXm8ihTkFZr6Q2I19baEylIpiN2pbUnUpClhYi3UhAkulAQJLpQECS6UBAkulAQJLpQECS6UBAkulAQJLpQECS6UBBkchqq+rMIYRNG43h+MNtsj1dh2Fp/ptXqMvf5pwqCrN2Ft56Hwfb10P58spgW1/1agvxRQZC1cRI2k3H/fB3SLqpItWgCizGvQrWO1xR2fp88yJPW90xBkJm7yViznE1255og41e6zse1WWCKeTwPy+1RVR3c/zDIY+t7piDIgu3YmiBTOK2JV0+5U4M8tr5nCoKszZ8bmwjbQX47IQnyTwqCTOa/sptA8jhjVJH2MyRB/kVBkCc7CSP7EVKYou21eK6CIM8xm5BG36faJRUEiS4UBIkuFASJLhQEiS4UBIkuFASJLhQEiS4UBIkuFASJLhQpSDabwq4sbjbFdnzYlcXt+NiwFLvQmituWGrYBauVMPHaWmPWWh6jsRckQNcQJDgihC+Qu6hUFkouiwAAAABJRU5ErkJggg==" InformativeScreenshot="e8945f5ddaf9dd533f239c99a110901e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myShipINFO - Small Parcel, Freight Audit - Cost Visibility' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bead558eea28ac5d1cb31492b140d6f0.jpg" Selector="&lt;html app='chrome.exe' title='myShipINFO - Small Parcel, Freight Audit - Cost Visibility' /&gt;" Url="https://www.myshipinfo.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="702,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[FileList]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: File Upload" sap:VirtualizedContainerService.HintSize="702,2708" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668,2491" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachFolderX DisplayName="For Each Folder in Folder" Folder="Data\Input" sap:VirtualizedContainerService.HintSize="606,2376" sap2010:WorkflowViewState.IdRef="ForEachFolderX_2" IncludeSubFolders="False" OrderBy="NameAscFirst" SkipFoldersWithoutPermission="False">
+              <ui:ForEachFolderX.Body>
+                <ActivityAction x:TypeArguments="si:DirectoryInfo, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="si:DirectoryInfo" Name="CurrentFolder" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2122" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Carrier" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[CurrentFolder.Name]" />
+                    <If Condition="[CurrentFolder.GetFiles.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1877" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,1727" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[&quot;Files Counts : &quot;+CurrentFolder.GetFiles().Count.ToString]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[CarrierName]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[If(CurrentFolder.Name = "OMNG","OMNI LOGISTICS","OMNI LOGISTICS WAREHOUSE")]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NSelectItem DisplayName="Select Item '--Select a'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[CarrierName]" ScopeIdentifier="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V3">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="3">
+                                <x:String>--Select a carrier here--</x:String>
+                                <x:String>OMNI LOGISTICS</x:String>
+                                <x:String>OMNI LOGISTICS WAREHOUSE</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" DesignTimeRectangle="53, 273, 96, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'--Select a'" FullSelectorArgument="&lt;webctrl parentid='multiform' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='car' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='multiform' tag='TABLE' /&gt;&lt;webctrl id='car' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="40054219-6cce-48ce-9da0-15bb95ef180b" InformativeScreenshot="19916f598492faa05d02de1245a702f5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Upload' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NSelectItem DisplayName="Select Item '--Select a'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="NCR Corporation United States" ScopeIdentifier="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V3">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="4">
+                                <x:String>--Select a customer here--</x:String>
+                                <x:String>Amerock - US</x:String>
+                                <x:String>Federal-Mogul United States</x:String>
+                                <x:String>NCR Corporation United States</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" DesignTimeRectangle="386, 294, 108, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'--Select a'" FullSelectorArgument="&lt;webctrl parentid='multiform' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cus' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='multiform' tag='TABLE' /&gt;&lt;webctrl id='cus' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="fa2fec97-e0c4-4af3-86e7-ba0fed4c9fe9" InformativeScreenshot="f81da3f53254bbcbfff400fd7478c419.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Upload' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NSelectItem DisplayName="Select Item '--Select Customer Code--'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="NCRA" ScopeIdentifier="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V3">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="4">
+                                <x:String>--Select Customer Code--</x:String>
+                                <x:String>NWAM</x:String>
+                                <x:String>FMUS</x:String>
+                                <x:String>NCRA</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" DesignTimeRectangle="573, 294, 96, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'--Select Customer Code--'" FullSelectorArgument="&lt;webctrl parentid='multiform' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='customerCode' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='multiform' tag='TABLE' /&gt;&lt;webctrl id='customerCode' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="8b4189cb-66bf-48b1-9ab7-d5caf931ac70" InformativeScreenshot="a32893583f8b2689f17dbfb2ede46b5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Upload' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="[CurrentFolder.FullName]" sap:VirtualizedContainerService.HintSize="434,596" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                            <ui:ForEachFileX.Body>
+                              <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                                <ActivityAction.Argument1>
+                                  <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+                                </ActivityAction.Argument1>
+                                <ActivityAction.Argument2>
+                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                </ActivityAction.Argument2>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,339" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="Click 'INPUT file1'" sap:VirtualizedContainerService.HintSize="358,158" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" DesignTimeRectangle="213, 301, 195, 16" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT file1'" FullSelectorArgument="&lt;webctrl idx='2' parentid='multiform' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='file1' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='multiform' tag='TABLE' /&gt;&lt;webctrl id='file1' type='file' tag='INPUT' class='mainInputFile' aaname='' /&gt;" Guid="a52b13d7-f6c9-431a-9f45-1c06d26e84cf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMcAAAAUCAYAAAA5rylHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMBSURBVGhD7Zq9bioxEIX3BZGilfIqFIgK7VuQlpQ06TY9PAEFdQpKHmGuj3/GY2NvvPdf7BzpSJtZj9fA+Wwi0ZFKpSpK4VCpKmI4jscjrddrdcV4f1TLEsOBANzvd3XFeH9Uy5LC0WiFY3lSOBqtcCxPCkejH+G40eG1o/795v82+jpQ/3owd9p0e++p6zDHBw22D3MOdPL35+tX+1VS7XBc9rQyHyQ+THj1dnX1z228/tvO1mS9Gc29kbYve7rer7R/2dJY6p3pMhy9gaGnw5cvzYTjtBO9VgrH/6Q2OGwIZcgQuo62n+b6X8NhYSjcs/7TcJggSiASOE40MLQ5BKbbnxrunhn7cHLI/nLg4xzhBHP9w+6xT47tdr6K9YYarxFz5DXXj40gzDGcXf2Z1QTH9W3lQCjcs3BsjP2bFkExu7evdd2K9pc4PrzBnd3dUXewhbo8lXhsCYIqHKWTQ64nAjNuQq3yDO8qHLhCcBBOAcfJBJS/clVOlHhyPMKBfg5gqd8GW4KEaxfs0MdzJGNjHevOQ86vxSrM6+oM1XmI10+sJjjGjQh3bgQ4hBxh9dcIHYec6whonAvQ2THFkGNsDDGPlWPQx4GHBQgZHFgPAy7XE9b+jafgcNcm6GcJR9x1Zcik6nC4kMfXBWf9CPxDQOWaXKAZDjE2AoB1hfndWgBO+lxXT0AqPvv59PMnx2WkESFPvlbFsKVAhaBnYQRYHgq5gzMwyYdknANUhArO4UhPJmcHDV5bdX7haTiM7O5s5mA4fuPJUVIyJ/ow1wQchZMjkT8NIjipFI5CKKxtUMOuDLuw2RBX4ZhxctjeYAFS8syCm+HITo6iMbZ+Qn4LhxECFOCwgWcQAwSppuBI+yN0UvZ5/r4LdAUOf81z+WAnteL/HLCbT86lcOTOdnIOdQUOF/IwXoQOp0Woh7ETc/NYWQ+eAUe6HmOGVdRmnRyqZ1c7HAu3wrE8KRyNVjiWJ4Wj0QrH8sRw6E/Wp60/WV+eGA6VSpVK4VCpiiL6AasSkaFcg/OtAAAAAElFTkSuQmCC" InformativeScreenshot="00c88f4407766d56107fbb24cb712114.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Upload' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="358,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="148ee345-b8fa-4032-84e3-35282515c80a" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,531" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,219" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="148ee345-b8fa-4032-84e3-35282515c80a" Text="[CurrentFile.FullName]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="197, 405, 261, 24" DesignTimeScaleFactor="1" FriendlyName="'File name'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' check:fulltext='File name:' /&gt;" Guid="26f0f858-1c3b-4d13-ac97-3164c44f7e91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQkAAAAcCAYAAAByBEr4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADDSURBVHhe7dTBCYQwFEXRFGoh05SFWMG0oRU4fFBHUB/ucw48CEnWt83zvJqZPU0kzCzuiET7fM3Mjt1GAqCIBBCJBBCJBBC9ikRrbTsBvREJIBIJIBIJIBIJIBIJ6Mw0Tdvp6u5NJKAjy7KswzCs4zhuN391V2/150wkoDN3oXgKRBEJ6NA5FCkQRSSgU3soUiCKSEDHKg4pEEUkgEgkgEgkgEgkgOhVJIB+iQQQiQQQPUbCzGzfJRJmZncTCTMLm9cfqi671LQnH10AAAAASUVORK5CYII=" InformativeScreenshot="d305c6dc75ab56940e94e7620ed5401e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="138, 409, 54, 15" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVFhH7VPRFcMgCHQq52EbhnEXZ3EDKokmaIkmTT8a68e9hwaOuwgmhED/gGl0NEyjo0EYdQTGkBGw6Cl4JGssoc85OX4WKqM9E9Poz+OEUXlf5SxjnUcdyBV1jJSPUK5D+u5gXxMDrqxxOze4QB6tyqFqcLGfRfI5J6K5o9zg2KiMIyJ5IUByZhMsoPVDNt5Yk4UuNcJcwXGggXPaRkWRei/i4k8mbK+i1SrnZGKF0qPHcUrDiptGtdeR6InM9Z7QKj0ucbRxY0c5rvblDTWnOMvxWgRrPXpnjhUNXx1d/laPzqXR5VdMdRYIPnlRPmsa2kbHxjQ6GqbRsRDoBaFqBwMxkChkAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="358,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="0, 40, 683, 480" FilePath="C:\Program Files\Google\Chrome\Application\chrome.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVDhPZdPLTxNRFAbw2WEkUYLRIEGsQEkptp0+NITntKAFgUDUlYmYGI0r/wAVdOuKKTZQQZ4+Y8LShRGxIBRoTBhdsbMG6AN5tIBGw0zv553bgRQ5yS/fnd57TiYzU+7/WhUcQsxp96y47KEVlwM/XQ4SczqkmGAfigq8Tjt2sEICnxUTHCJtBiPYSVSwIV2khqq2iepZrS1V6g8RwSZFa2ysia7pYSs9bCUsq3gSTrNcaZH2DYlU8yLdQLrlSmo3K8xkqcKMpUoLWFKLFWaRNfNvWnUjt6rYJp1M6AaiV+vxd/4LlpcS2PpDQOJ+JKVmKEEbSVLKnBXJoJXIs7zA8a9ah9y+Jiw4LVgsNyF8xc0a7wz9wrlHCeaabxvhtQSU+XrIsyYos2bKROSZsx7O8rxF4l+04PHdKvwoK8XvyXE0dW7C9jBBxffcHtwGSQShzBg1JYQKcabhZphGmkhZ7yXM1VoQjidh6dhg+I44pWbqenk1DjlQDCWgJ3JAD3laD+7sYCNKNTfbBbK4GIepfQOmB+sUTXXNrjfY81CmCzRnGM7Y3xAyDjSQkv4G0DWCkW+48WwTxvvre0qpy94EyNp7KFP5mlOQp/IkrqTXLRr63DD01TOu121YiG2i1RuH4d4a00YHLsS2IAfPQ57MpU5C+azKHeIMvjqh2HcBxU8vYjedL69j7HuA3bI6bC78FV3vGmnjCSiUPHGcgT8n9WkX9dSJhT21hCYp6q6DqrC7lqjUdXUffUMfcqBMHKON2ZD92UhOZKc+JLV0opBV4HVKBV4XCik1mSdOlgOjeij+o0T2H4H8iZHgz9r/f1CH6LoEj84jgOYuUukrpw2ZmsOQxzM9B5rTiw7SUcOnxRopv7OavB3Nw854RmjnY4ZHHjskaMe04rh/A+kk+qOwHW8AAAAASUVORK5CYII=" InformativeScreenshot="6d5cc61984c4ad8c2f182b57d007ef6e.png" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" />
+                                    </uix:NApplicationCard.TargetApp>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachFileX.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEachFileX>
+                          <uix:NClick ClickType="Single" DelayAfter="10" DelayBefore="3" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10bb7415-1d08-482b-8029-4bc8074c0a81" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" DesignTimeRectangle="621, 301, 45, 16" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl idx='2' parentid='multiform' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='submit' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='multiform' tag='TABLE' /&gt;&lt;webctrl id='submit' type='submit' tag='INPUT' class='' aaname='Submit' check:text='Submit' /&gt;" Guid="466e9628-c2ac-4d8a-8d99-e31a62e70e7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAUCAYAAAAk/dWZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVFhH7ZbbDYUgDIZZkMRpfDBsojM4AM7hg1M4Qg+/2ALeEs058XIk+RPSlrafRaOiB6xnQdR1TXme30bol5dAwNH3/W2Efnm9EGfqfyFsoUgplqayXY7z6qjMDNlF37a6SpNpsHc5Kjvzs/ZDNIZUESVsS9JZSV0ck+g4hAg14poT7YfYaDo8OScp7CGMTI+BLBnYM2/XVRcmPDbs8+F8iInrsfZDQGhwaAgK12kdQokdMb4ZByFnsecY7D2o5Pv6JGZaKAr7ZBJyncSOSfBEQ444/mcQ4UmyLS0qPnl34E+nJZM4CwJKv07hqgzF2O4aD5Nw+/Feq7jxPRA4uwJyCOJqeiGuokWIR/yK33k9AILoA8QKcCweQZ2hAAAAAElFTkSuQmCC" InformativeScreenshot="fc4290941ace39c8a79429a946715218.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Upload' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachFolderX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachFolderX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="b75b929d9182c641b2575e48fb257ee5.jpg" Selector="&lt;html app='chrome.exe' title='File Upload' /&gt;" Url="https://www.myshipinfo.com/nsp/uploadinvoiceimages.do" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
